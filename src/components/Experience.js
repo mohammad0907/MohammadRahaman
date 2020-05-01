@@ -44,7 +44,7 @@ export default function About() {
                     <h3 className="vertical-timeline-element-title">Information Technology Intern - United States Steel</h3>
                     <h4 className="vertical-timeline-element-subtitle">Ecorse, MI</h4>
                     <p>
-                        Worked indepently on the company's business appilication
+                        Worked indepently on the company's business application
                      </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
@@ -54,7 +54,7 @@ export default function About() {
                     icon = {<WorkOutlineOutlinedIcon />}
                    
                 >
-                    <h3 className="vertical-timeline-element-title">Sales Assocaite - 7-Eleven</h3>
+                    <h3 className="vertical-timeline-element-title">Sales Associate - 7-Eleven</h3>
                     <h4 className="vertical-timeline-element-subtitle">Roseville, MI</h4>
                     <p>
                         Customer service 
