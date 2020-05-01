@@ -27,7 +27,7 @@ export default function About() {
     <div className={classes.root}>
       <Paper elevation={0}>
         <p>As a Software Developer I'm always interested in learning more about new and creative ways to write code. College has given me a good introduction but I would like to take my skills and abilities to a higher level. 
-          I have a passion for Front-End Development and love making unique and seemless designs and functionality. Currently, I have sight set on Back-end Development. In a couple of month I want to be fluent in Back-end Development and become a Full Stack Web Developer.I also enjoy working on Mobile Applications and Web Apps/Sites. </p>
+          I have a passion for Front-End Development and love making unique and seemless designs and functionality. Currently, I have my sight set on Back-end Development. In a couple of month, I want to be fluent in Back-end Development and become a Full Stack Web Developer.I also enjoy working on Mobile Applications and Web Apps/Sites. </p>
       </Paper>
     </div>
   );
