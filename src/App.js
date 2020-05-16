@@ -70,7 +70,7 @@ function App() {
       </ScrollableAnchor>
       <ScrollableAnchor id={'experience'}>
         <div style={{ width: "100%", height: "auto", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", backgroundColor: "whitesmoke", padding: "40px" }}>
-          <h3>Experince</h3>
+          <h3>Experience</h3>
           <Experince />
         </div>
       </ScrollableAnchor>
