@@ -8,12 +8,13 @@ import Projects from "./components/Projects.js"
 import Skills from "./components/Skills.js"
 import Contact from "./components/Contact"
 import backg from './images/background.png'
-import { Typography } from '@material-ui/core'
+import { Typography, Divider } from '@material-ui/core'
 import ArrowDown from './images/multimedia-option.png'
 import ScrollableAnchor from 'react-scrollable-anchor'
 import { configureAnchors } from 'react-scrollable-anchor'
 import Button from '@material-ui/core/Button';
 import Footer from "./components/footer"
+
 
 
 
@@ -64,25 +65,37 @@ function App() {
       </ScrollableAnchor>
       <ScrollableAnchor id={'about'}>
         <div style={{ width: "100%", height: "auto", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", padding: "40px" }}>
-          <h3>About Me</h3>
+          <div style={{ marginBottom: "20px" }}>
+            <h3>About Me</h3>
+            <Divider variant="middle" />
+          </div>
           <About />
         </div>
       </ScrollableAnchor>
       <ScrollableAnchor id={'experience'}>
         <div style={{ width: "100%", height: "auto", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", backgroundColor: "whitesmoke", padding: "40px" }}>
-          <h3>Experience</h3>
+          <div style={{ marginBottom: "50px" }}>
+            <h3>Experience</h3>
+            <Divider variant="middle" />
+          </div>
           <Experince />
         </div>
       </ScrollableAnchor>
       <ScrollableAnchor id={'education'}>
         <div style={{ width: "100%", height: "auto", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", backgroundColor: "white", padding: "40px" }}>
-          <h3>Education</h3>
+          <div style={{ marginBottom: "40px" }}>
+            <h3>Education</h3>
+            <Divider variant="middle" />
+          </div>
           <Education />
         </div>
       </ScrollableAnchor>
       <ScrollableAnchor id={'projects'}>
         <div style={{ width: "100%", height: "auto", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", backgroundColor: "whitesmoke", padding: "40px" }}>
-          <h3>Projects</h3>
+          <div style={{ marginBottom: "20px" }}>
+            <h3>Projects</h3>
+            <Divider variant="middle" />
+          </div>
           <Projects />
           <a href="https://github.com/mohammad0907">  <Button size="small" color="primary" variant="outlined">
             More projects can be Found in my Github
@@ -91,13 +104,20 @@ function App() {
       </ScrollableAnchor>
       <ScrollableAnchor id={'skills'}>
         <div style={{ width: "100%", height: "auto", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", backgroundColor: "white", padding: "40px" }}>
-          <h3>Skills</h3>
+          <div style={{ marginBottom: "20px" }}>
+            <h3>Skills</h3>
+            <Divider variant="middle" />
+          </div>
           <Skills />
         </div>
       </ScrollableAnchor>
       <ScrollableAnchor id={'contact'}>
         <div style={{ width: "100%", height: "auto", display: "flex", justifyContent: "center", alignItems: "center", flexDirection: "column", backgroundColor: "whitesmoke", padding: "40px" }}>
-          <h3>Contact</h3>
+          <div style={{ marginBottom: "20px" }}>
+            <h3>Contact Me</h3>
+            <Divider variant="middle" />
+          </div>
+
           <Contact />
         </div>
       </ScrollableAnchor>
