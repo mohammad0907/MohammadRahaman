@@ -33,7 +33,7 @@ const useStyles = makeStyles((theme) => ({
         height: 300,
     },
     '@media only screen and (max-width: 450px)': {
-        height: 180,
+        height: 160,
     },
     '@media only screen and (max-width: 850px) and (max-height: 450px)': {
       width: 400,

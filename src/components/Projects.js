@@ -32,7 +32,7 @@ const useStyles = makeStyles({
         width: "100%",
         display: "flex",
         justifyContent: "center",
-        '@media only screen and (max-width: 800px)': {
+        '@media only screen and (max-width: 1100px)': {
             flexDirection: "column",
             alignItems: "center"
 
@@ -46,7 +46,7 @@ const useStyles = makeStyles({
     },
     cardContainer: {
         width: "30%",
-        '@media only screen and (max-width: 800px)': {
+        '@media only screen and (max-width: 1100px)': {
             width: "80%",
         },
         '@media only screen and (max-width: 400px)': {
@@ -114,6 +114,14 @@ export default function ImgMediaCard() {
         setOpenDiag(false)
         setItems([])
     }
+    let height
+
+    if(window.innerHeight < 900 && window.innerWidth < 450){
+        height = 240
+    }else{
+        height = 440
+    }
+    
 
     return (
         <div className={classes.container}>
@@ -123,7 +131,7 @@ export default function ImgMediaCard() {
                         <CardMedia
                             component="img"
                             alt="Contemplative Reptile"
-                            height="240"
+                            height={height.toString()}
                             image={hireroadlogo}
                             title="Contemplative Reptile"
                         />
@@ -165,7 +173,7 @@ export default function ImgMediaCard() {
                         <CardMedia
                             component="img"
                             alt="Contemplative Reptile"
-                            height="240"
+                            height={height.toString()}
                             image={hotelLogo}
                             title="Contemplative Reptile"
                         />
@@ -205,7 +213,7 @@ export default function ImgMediaCard() {
                         <CardMedia
                             component="img"
                             alt="Contemplative Reptile"
-                            height="240"
+                            height={height.toString()}
                             image={movielogo}
                             title="Contemplative Reptile"
                         />
