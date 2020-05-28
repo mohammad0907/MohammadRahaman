@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
@@ -11,6 +11,18 @@ import hireroadlogo from "../images/hireroadlogo.png"
 import hotelLogo from "../images/logo.jpg"
 import movielogo from "../images/movie.png"
 import Chip from '@material-ui/core/Chip';
+import CarouselDiag from "./carouselDiag"
+import H1 from "../images/hireroad/h1.jpg"
+import H2 from "../images/hireroad/h2.jpg"
+import H3 from "../images/hireroad/h3.jpg"
+import H4 from "../images/hireroad/h4.jpg"
+import Ht1 from "../images/hotel/ht1.jpg"
+import Ht2 from "../images/hotel/ht2.jpg"
+import Ht3 from "../images/hotel/ht3.jpg"
+import Ht4 from "../images/hotel/ht4.jpg"
+import Ht5 from "../images/hotel/ht5.jpg"
+import "../App.css"
+import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles({
     root: {
@@ -28,6 +40,8 @@ const useStyles = makeStyles({
         '& > *': {
             margin: "20px"
         },
+     
+        
 
     },
     cardContainer: {
@@ -43,6 +57,63 @@ const useStyles = makeStyles({
 
 export default function ImgMediaCard() {
     const classes = useStyles();
+    const [openDiag, setOpenDiag] = useState(false)
+    const [items, setItems] = useState([])
+  
+    const handleOpen = (type) => () => {
+        
+        if(type === "hireroad") {
+           setItems([...items, 
+            {
+                imgPath:
+                  H1,
+              },
+              {
+                imgPath:
+                  H2
+              },
+              {
+                imgPath:
+                  H3
+              },
+              {
+                imgPath:
+                  H4
+              },
+           ])
+        }else if (type === "hotel"){
+            setItems([...items, 
+                {
+                    imgPath:
+                      Ht1,
+                  },
+                  {
+                    imgPath:
+                      Ht2
+                  },
+                  {
+                    imgPath:
+                      Ht3
+                  },
+                  {
+                    imgPath:
+                      Ht4
+                  },
+                  {
+                    imgPath:
+                      Ht5
+                  },
+               ])
+        }
+
+        console.log(items)
+        setOpenDiag(true)
+    }
+
+    const handleClose = () =>{
+        setOpenDiag(false)
+        setItems([])
+    }
 
     return (
         <div className={classes.container}>
@@ -78,9 +149,12 @@ export default function ImgMediaCard() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <a href="https://www.hireroad.us">  <Button size="small" color="primary">
+                        <Link style = {{textDecoration : "none"}} href="https://www.hireroad.us">  <Button size="small" color="primary">
                             View project
-                    </Button> </a>
+                    </Button> </Link>
+                    <Button size="small" color="primary" onClick = {handleOpen("hireroad")}>
+                            View Images
+                    </Button>
                     </CardActions>
                 </Card>
             </div>
@@ -115,9 +189,12 @@ export default function ImgMediaCard() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <a href="https://github.com/mohammad0907/hotel435-frontend">  <Button size="small" color="primary">
+                        <Link style = {{textDecoration : "none"}} href="https://github.com/mohammad0907/hotel435-frontend">  <Button size="small" color="primary">
                             View project
-                    </Button> </a>
+                    </Button> </Link>
+                    <Button size="small" color="primary" onClick = {handleOpen("hotel")}>
+                            View Images
+                    </Button>
                     </CardActions>
                 </Card>
             </div>
@@ -151,11 +228,15 @@ export default function ImgMediaCard() {
                         </CardContent>
                     </CardActionArea>
                     <CardActions>
-                        <a href="https://github.com/tmsyed/MovieApp">  <Button size="small" color="primary">
+                        <Link style = {{textDecoration : "none"}} href="https://github.com/tmsyed/MovieApp">  <Button size="small" color="primary">
                             View project
-                    </Button> </a>
+                    </Button> </Link>
                     </CardActions>
                 </Card>
+            </div>
+            <div>
+                <CarouselDiag open = {openDiag} close = {handleClose}  slides = {items} />
+    
             </div>
 
         </div>

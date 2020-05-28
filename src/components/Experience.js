@@ -6,7 +6,6 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import WorkOutlineOutlinedIcon from '@material-ui/icons/WorkOutlineOutlined';
 
-
 const useStyles = makeStyles((theme) => ({
     root: {
         display: 'flex',
@@ -43,10 +42,10 @@ export default function About() {
 
                 >
                     <h3 className="vertical-timeline-element-title">Technology Intern</h3>
-                    <h3 className="vertical-timeline-element-title"  style = {{marginBottom : "5px"}}>TD Auto Finance</h3>
+                    <h3 className="vertical-timeline-element-title"  style = {{marginBottom : "5px"}}>TD Bank</h3>
                     <h5 className="vertical-timeline-element-subtitle">Farmington Hills, MI</h5>
                     <p>
-                        Worked as a junior developer on the company's internal web application
+                        Worked as a junior developer on their auto finance sector and I worked on their internal web application
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement

@@ -97,7 +97,7 @@ function App() {
             <Divider variant="middle" />
           </div>
           <Projects />
-          <a href="https://github.com/mohammad0907">  <Button size="small" color="primary" variant="outlined">
+          <a style = {{textDecoration : "none"}} href="https://github.com/mohammad0907">  <Button size="small" color="primary" variant="outlined">
             More projects can be Found in my Github
            </Button> </a>
         </div>
