@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import './App.css';
 import NavBar from './components/Nav.js'
 import About from './components/About.js'
-import Experince from "./components/Experience.js"
+import Experience from "./components/Experience.js"
 import Education from './components/Education.js'
 import Projects from "./components/Projects.js"
 import Skills from "./components/Skills.js"
@@ -78,7 +78,7 @@ function App() {
             <h3>Experience</h3>
             <Divider variant="middle" />
           </div>
-          <Experince />
+          <Experience />
         </div>
       </ScrollableAnchor>
       <ScrollableAnchor id={'education'}>

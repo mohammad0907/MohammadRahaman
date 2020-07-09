@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     },
 }));
 
-export default function About() {
+export default function Experience() {
     const classes = useStyles();
 
     return (
@@ -22,7 +22,7 @@ export default function About() {
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="Starting in June 2020"
+                    date="June 2020 - Present"
                     iconStyle={{ background: 'rgb(52, 58, 64)', color: '#fff' }}
                     icon={<WorkOutlineOutlinedIcon />}
 
@@ -59,7 +59,7 @@ export default function About() {
                     <h3 className="vertical-timeline-element-title"  style = {{marginBottom : "5px"}}>United States Steel</h3>
                     <h5 className="vertical-timeline-element-subtitle">Ecorse, MI</h5>
                     <p>
-                        Worked indepently on the company's business application
+                        Worked independently on the company's business application
                      </p>
                 </VerticalTimelineElement>
             </VerticalTimeline>
