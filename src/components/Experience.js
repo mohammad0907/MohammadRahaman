@@ -22,7 +22,21 @@ export default function Experience() {
             <VerticalTimeline>
                 <VerticalTimelineElement
                     className="vertical-timeline-element--work"
-                    date="June 2020 - Present"
+                    date="September 2020 - Present"
+                    iconStyle={{ background: 'rgb(52, 58, 64)', color: '#fff' }}
+                    icon={<WorkOutlineOutlinedIcon />}
+
+                >
+                    <h3 className="vertical-timeline-element-title">Software Developer</h3>
+                    <h3 className="vertical-timeline-element-title"  style = {{marginBottom : "5px"}}>General Motors</h3>
+                    <h5 className="vertical-timeline-element-subtitle">Detroit, MI</h5>
+                    <p>
+                        Pending...
+                    </p>
+                </VerticalTimelineElement>
+                <VerticalTimelineElement
+                    className="vertical-timeline-element--work"
+                    date="June 2020 - August 2020"
                     iconStyle={{ background: 'rgb(52, 58, 64)', color: '#fff' }}
                     icon={<WorkOutlineOutlinedIcon />}
 
@@ -31,7 +45,7 @@ export default function Experience() {
                     <h3 className="vertical-timeline-element-title"  style = {{marginBottom : "5px"}}>Quicken Loans</h3>
                     <h5 className="vertical-timeline-element-subtitle">Detroit, MI</h5>
                     <p>
-                        Pending...
+                        Worked as a junior developer on the companies internal web application.
                     </p>
                 </VerticalTimelineElement>
                 <VerticalTimelineElement
